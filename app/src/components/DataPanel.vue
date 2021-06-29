@@ -599,6 +599,7 @@ export default {
   },
   watch: {
     selectedSensorTab(index) {
+      alert("TabSelection")
       if (this.multipleTabCompare.features[index]) {
         const poi = this.getLocationCode(this.multipleTabCompare.features[index]
           .properties.indicatorObject);

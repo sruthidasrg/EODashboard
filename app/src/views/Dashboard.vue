@@ -33,6 +33,15 @@
         >
           About
         </v-btn>
+
+        <v-btn
+          text
+          dark
+          small
+          @click="displayShowText('analysis')"
+        >
+          India's covid room
+        </v-btn>
       </template>
       <v-spacer></v-spacer>
       <img class="header__logo" :src="appConfig && appConfig.branding.headerLogo" />
@@ -91,6 +100,15 @@
         >
           About
         </v-btn>
+
+         <v-btn
+          block
+          text
+          color="primary"
+          @click="displayShowText('about')"
+        >
+          Analysis
+        </v-btn>
         <v-divider></v-divider>
       </template>
       <selection-panel style="overflow:hidden" />
@@ -146,6 +164,7 @@
       <template v-else>
         <Welcome v-if="showText === 'welcome'" />
         <About v-else-if="showText === 'about'" />
+        <Analysis v-else-if="showText === 'analysis'" />
       </template>
     </v-navigation-drawer>
     <v-dialog
@@ -205,6 +224,7 @@
         <template v-else>
           <Welcome v-if="showText === 'welcome'" style="padding-bottom: 135px !important" />
           <About v-else-if="showText === 'about'" style="padding-bottom: 100px !important" />
+          <Analysis v-else-if="showText === 'analysis'" style="padding-bottom: 100px !important" />
         </template>
       </div>
     </v-dialog>
@@ -232,6 +252,7 @@
 <script>
 import Welcome from '@/views/Welcome.vue';
 import About from '@/views/About.vue';
+import Analysis from '@/views/Analysis.vue';
 import Banner from '@/components/Banner.vue';
 import SelectionPanel from '@/components/SelectionPanel.vue';
 import CenterPanel from '@/components/CenterPanel.vue';
@@ -254,6 +275,7 @@ export default {
   components: {
     Welcome,
     About,
+    Analysis,
     Banner,
     SelectionPanel,
     CenterPanel,

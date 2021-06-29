@@ -29,6 +29,12 @@ module.exports = [
     welcomeText: '/eodash-data/general/welcome',
     tutorialText: '/eodash-data/general/tutorials',
     showNewsCarousel: true,
+    showCovidIndia: true,
+    covidIndiaItems: [
+      {
+        iframe: 'https://storymaps.arcgis.com/stories/4fdc0d03d3a34aa485de1fb0d2650ee0',
+      },
+    ],
     newsCarouselitems: [
       {
         poi: 'ES7-E13n',
@@ -168,6 +174,12 @@ module.exports = [
     welcomeText: '/data/trilateral/welcome',
     tutorialText: '/data/trilateral/tutorials',
     showNewsCarousel: true,
+    showCovidIndia:true,
+    covidIndiaItems:[
+       {
+       iframe: 'https://storymaps.arcgis.com/stories/40f8a4f4772f4540a428bf3009ac1825',
+       },
+    ],
     newsCarouselitems: [
       {
         src: './data/trilateral/Hackathon.png',
@@ -182,6 +194,7 @@ module.exports = [
       },
       {
         iframe: 'https://www.youtube.com/embed/URPzd29SGmE',
+
       },
       {
         poi: 'JP01-N5',
@@ -232,6 +245,7 @@ module.exports = [
           'W1-N1',
           'W2-N1',
           'W3-N1',
+          'W8-N1'
         ],
         label: 'eoSensor',
       },

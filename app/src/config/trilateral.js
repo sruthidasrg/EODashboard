@@ -741,6 +741,53 @@ export const globalIndicators = [
       },
     },
   },
+
+  {
+    properties: {
+      indicatorObject: {
+        dataLoadFinished: true,
+        country: 'all',
+        city: 'World',
+        siteName: 'global',
+        description: 'Air Quality',
+        indicator: 'N1',
+        lastIndicatorValue: null,
+        indicatorName: 'Air Quality - OMI: NO2',
+        eoSensor: 'NASA OMI_Test',
+        subAoi: {
+          type: 'FeatureCollection',
+          features: [{
+            type: 'Feature',
+            properties: {},
+//            iframe: 'https://www.youtube.com/embed/URPzd29SGmE',
+//            geometry: wkt.read('POLYGON((-180 -71, 180 -71, 180 71, -180 71, -180 -71))').toJson(),
+            geometry:'./eodash-data/features/N6/N6_W6.geojson',
+          }],
+        },
+        lastColorCode: null,
+        aoi: null,
+        aoiID: 'W8',
+        time: getMonthlyDates('2004-10-01', '2021-05-01'),
+        inputData: [''],
+
+//        display: {
+//          protocol: 'xyz',
+//          minZoom: 1,
+//          maxNativeZoom: 6,
+//          tileSize: 256,
+//          opacity: 0.95,
+////          url: 'https://storymaps.arcgis.com/stories/855d9b56a6ed45e7bef04ff3692b9e13',
+////          url:'./eodash-data/features/N6/N6_W6.geojson',
+//
+//          name: 'Air Quality (NASA)',
+//          dateFormatFunction: (date) => DateTime.fromISO(date).toFormat('yyyyMM'),
+//          legendUrl: 'eodash-data/data/no2Legend.png',
+//        },
+      },
+    },
+  },
+
+
   {
     properties: {
       indicatorObject: {

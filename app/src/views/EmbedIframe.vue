@@ -216,6 +216,7 @@ export default {
       const { selectedIndicator } = this;
       const hasGrouping = this.appConfig.featureGrouping
         .find((g) => g.features.find((i) => i.includes(this.getLocationCode(selectedIndicator))));
+
       if (hasGrouping) {
         compare = {};
         compare.label = hasGrouping.label;
